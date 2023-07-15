@@ -1,0 +1,81 @@
+ros-iron-popf (0.0.15-1bullseye) bullseye; urgency=high
+
+
+
+ -- Francisco Martin <fmrico@gmail.com>  Fri, 14 Jul 2023 22:00:00 -0000
+
+ros-iron-popf (0.0.14-1bullseye) bullseye; urgency=high
+
+  * Checking null problem components
+  * Contributors: Francisco Martín Rico
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 26 May 2022 22:00:00 -0000
+
+ros-iron-popf (0.0.13-1bullseye) bullseye; urgency=high
+
+
+
+ -- Francisco Martin <fmrico@gmail.com>  Fri, 02 Jul 2021 22:00:00 -0000
+
+ros-iron-popf (0.0.12-1bullseye) bullseye; urgency=high
+
+  * Foxy initial version
+  * Fix conflicts in changelog
+  * Functional version
+  * 0.0.3
+  * Updated changelog
+  * Contributors: Francisco Martin Rico
+
+ -- Francisco Martin <fmrico@gmail.com>  Fri, 17 Jul 2020 22:00:00 -0000
+
+ros-iron-popf (0.0.11-1bullseye) bullseye; urgency=high
+
+  * Added dependencies to package.xml
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 19 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.10-1bullseye) bullseye; urgency=high
+
+  * Added dependencies to package.xml
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 19 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.6-1bullseye) bullseye; urgency=high
+
+
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 19 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.5-1bullseye) bullseye; urgency=high
+
+  * Fixing package dependencies
+    Signed-off-by: Francisco Martin Rico <mailto:fmrico@gmail.com>
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 19 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.3-1bullseye) bullseye; urgency=high
+
+  * Fix packaging errors
+
+ -- Francisco Martin <fmrico@gmail.com>  Thu, 19 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.2-1bullseye) bullseye; urgency=high
+
+  * Update to ROS2
+  * Use as library
+
+ -- Francisco Martin <fmrico@gmail.com>  Fri, 06 Dec 2019 23:00:00 -0000
+
+ros-iron-popf (0.0.1-1bullseye) bullseye; urgency=high
+
+  * Update package.xml
+  * tidy up
+  * Merge branch 'master' of https://github.com/LCAS/popf
+  * Initial commit
+  * popf 1 included and made work
+  * initial commit
+  * Contributors: Marc Hanheide
+
+ -- Francisco Martin <fmrico@gmail.com>  Mon, 25 Apr 2016 22:00:00 -0000
+
+
