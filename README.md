@@ -1,3 +1,26 @@
+## popf (kilted) - 1.0.0-1
+
+The packages in the `popf` repository were released into the `kilted` distro by running `/usr/bin/bloom-release popf --rosdistro kilted` on `Mon, 16 Feb 2026 06:05:47 -0000`
+
+The `popf` package was released.
+
+Version of package(s) in repository `popf`:
+
+- upstream repository: https://github.com/fmrico/popf.git
+- release repository: https://github.com/ros2-gbp/popf-release.git
+- rosdistro version: `0.0.18-1`
+- old version: `0.0.18-1`
+- new version: `1.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## popf (kilted) - 0.0.18-1
 
 The packages in the `popf` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --rosdistro kilted --track kilted popf` on `Fri, 06 Jun 2025 04:45:24 -0000`
