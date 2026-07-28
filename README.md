@@ -1,3 +1,26 @@
+## popf (lyrical) - 0.0.20-1
+
+The packages in the `popf` repository were released into the `lyrical` distro by running `/usr/bin/bloom-release popf --rosdistro lyrical` on `Tue, 28 Jul 2026 08:12:50 -0000`
+
+The `popf` package was released.
+
+Version of package(s) in repository `popf`:
+
+- upstream repository: https://github.com/fmrico/popf.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.0.20-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## popf (jazzy) - 0.1.0-1
 
 The packages in the `popf` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release popf --rosdistro jazzy` on `Mon, 16 Feb 2026 06:11:23 -0000`
