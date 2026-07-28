@@ -1,0 +1,12 @@
+Source: ros-lyrical-popf
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martin" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), bison, coinor-libcbc-dev, coinor-libcgl-dev, coinor-libclp-dev, coinor-libcoinutils-dev, flex, libfl-dev, ros-lyrical-ament-cmake, ros-lyrical-rclcpp, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/popf/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-popf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, bison, coinor-libcbc-dev, coinor-libcgl-dev, coinor-libclp-dev, coinor-libcoinutils-dev, flex, ros-lyrical-rclcpp, ros-lyrical-ros-workspace
+Description: The POPF package
