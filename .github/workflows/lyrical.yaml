@@ -1,27 +1,27 @@
-name: rolling
+name: lyrical
 
 on:
   pull_request:
     branches:
-      - rolling-devel
+      - lyrical-devel
   push:
     branches:
-      - rolling-devel
+      - lyrical-devel
 
 jobs:
   build-and-test:
     runs-on: ubuntu-26.04
     container:
-      image: ghcr.io/ros-tooling/setup-ros-docker/setup-ros-docker-ubuntu-resolute-ros-rolling-ros-base:master
+      image: ghcr.io/ros-tooling/setup-ros-docker/setup-ros-docker-ubuntu-resolute-ros-lyrical-ros-base:master
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: rolling-devel
+          ref: lyrical-devel
       - name: build and test
         uses: ros-tooling/action-ros-ci@0.4.8
         with:
           package-name: popf
-          target-ros2-distro: rolling
+          target-ros2-distro: lyrical
           colcon-defaults: |
             {
               "test": {
