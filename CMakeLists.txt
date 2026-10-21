@@ -15,6 +15,7 @@ find_package(Clp)
 find_package(CoinUtils)
 find_package(Cbc)
 find_package(Cgl)
+find_package(OSI)
 
 # Some distros/modules don't populate OSI-related variables (e.g. OSICLP_LIBRARIES)
 # but popf's CLP solver needs them when enforcing strict shared-library linking.
@@ -42,6 +43,9 @@ include_directories(
   ${CBC_INCLUDES}/coin  
   ${CPLEX_INCLUDES} 
   ${CONCERT_INCLUDES}
+  ${OSI_INCLUDES}/coin
+  ${COINUTILS_INCLUDES}/coin
+  ${CGL_INCLUDES}/coin
 )
 
 ## ParsePDDL
@@ -204,6 +208,27 @@ install(TARGETS popf
 install(FILES src/popf/Popf.hpp
   DESTINATION include/popf
 )
+
+if(BUILD_TESTING)
+  find_package(ament_cmake_test REQUIRED)
+  # Smoke tests: a temporal problem with a plan and one without
+  foreach(case plan unsolvable)
+    if(case STREQUAL "plan")
+      set(problem problem.pddl)
+    else()
+      set(problem problem_unsolvable.pddl)
+    endif()
+    ament_add_test(popf_smoke_${case}
+      GENERATE_RESULT_FOR_RETURN_CODE_ZERO
+      COMMAND ${CMAKE_COMMAND}
+        -DPOPF=$<TARGET_FILE:popf>
+        -DDOMAIN=${CMAKE_CURRENT_SOURCE_DIR}/test/domain.pddl
+        -DPROBLEM=${CMAKE_CURRENT_SOURCE_DIR}/test/${problem}
+        -DEXPECT=${case}
+        -P ${CMAKE_CURRENT_SOURCE_DIR}/test/run_popf.cmake
+      TIMEOUT 120)
+  endforeach()
+endif()
 
 ament_export_include_directories(include)
 ament_export_libraries(popfCommon ParsePDDL VALGlobals Inst ${CBC_LIBRARY} ${CGL_LIBRARIES} ${OSICLP_LIBRARIES} ${OSI_LIBRARIES} ${CLP_LIBRARIES}  ${COINUTILS_LIBRARIES})
