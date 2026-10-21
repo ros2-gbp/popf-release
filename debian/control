@@ -1,0 +1,12 @@
+Source: ros-humble-popf
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martin" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), bison, coinor-libcbc-dev, coinor-libcgl-dev, coinor-libclp-dev, coinor-libcoinutils-dev, flex, libfl-dev, ros-humble-ament-cmake, ros-humble-ament-cmake-test <!nocheck>, ros-humble-rclcpp, ros-humble-ros-workspace
+Homepage: https://index.ros.org/p/popf/#humble
+Standards-Version: 3.9.2
+
+Package: ros-humble-popf
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, bison, coinor-libcbc-dev, coinor-libcgl-dev, coinor-libclp-dev, coinor-libcoinutils-dev, flex, ros-humble-rclcpp, ros-humble-ros-workspace
+Description: The POPF package
