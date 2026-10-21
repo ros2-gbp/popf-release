@@ -1,3 +1,26 @@
+## popf (lyrical) - 1.0.1-1
+
+The packages in the `popf` repository were released into the `lyrical` distro by running `/usr/bin/bloom-release --rosdistro lyrical --track lyrical popf --no-pull-request --override-release-repository-url https://github.com/ros2-gbp/popf-release.git` on `Wed, 21 Oct 2026 05:25:17 -0000`
+
+The `popf` package was released.
+
+Version of package(s) in repository `popf`:
+
+- upstream repository: https://github.com/fmrico/popf.git
+- release repository: https://github.com/ros2-gbp/popf-release.git
+- rosdistro version: `0.0.20-1`
+- old version: `0.0.20-1`
+- new version: `1.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.4`
+- catkin_pkg version: `1.1.1`
+- rosdep version: `0.27.0`
+- rosdistro version: `1.1.0`
+- vcstools version: `0.1.42`
+
+
 ## popf (kilted) - 1.0.1-1
 
 The packages in the `popf` repository were released into the `kilted` distro by running `/usr/bin/bloom-release --rosdistro kilted --track kilted popf --no-pull-request --override-release-repository-url https://github.com/ros2-gbp/popf-release.git` on `Wed, 21 Oct 2026 05:24:43 -0000`
